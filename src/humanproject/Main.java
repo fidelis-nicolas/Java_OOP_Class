@@ -16,7 +16,7 @@ public class Main {
         person1.height = 1.92;
         person1.printPersonDetails();
         person1.eat("Rice");
-        person1.move();
+        person1.move(20);
 
 
 
@@ -27,5 +27,20 @@ public class Main {
         person2.printPersonDetails();
         person2.eat("Apple");
 
+        //You can assign a method with return type to a variable of the same type
+        String music = person1.playMusic("Westlife: Obvious");
+        System.out.println(music);
+
+        // Method to check gender
+
+        if (person1.checkGender("famale")){
+            System.out.println("You are a male");
+        }
+        else {
+            System.out.println("you are a female");
+        }
+        // Method to calculate human tax
+        double tax = person2.calCulateTax(34444.000, 3333.444,56000.00,7688.0);
+        System.out.println(tax);
     }
 }

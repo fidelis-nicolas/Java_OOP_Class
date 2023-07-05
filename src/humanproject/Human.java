@@ -25,8 +25,8 @@ public class Human {
     public void eat(String food){
         System.out.println("Eating...." + food);
     }
-    public void move(){
-        System.out.println("Moving.......");
+    public void move(int distance){
+        System.out.println("Moved for " + distance + "Km");
     }
 
     public void printPersonDetails(){
@@ -36,8 +36,26 @@ public class Human {
         System.out.println("Height: " + this.height);
         System.out.println("Color: " + this.color);
         System.out.println("Legs: " + this.leg);
-
         System.out.println();
     }
 
+    public String playMusic(String track){
+        return "Playing...." + track;
+    }
+    public boolean checkGender(String gender){
+        if(gender.equals("male")){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public double calCulateTax(double rent, double power, double carPayment, double insurance){
+        double totalTax = rent+power+carPayment+insurance;
+        return totalTax;
+    }
+
+    // Methods with array
+    // Arrays of objects
 }
