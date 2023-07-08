@@ -15,6 +15,7 @@ public class Human {
 
     // Human leg is constant
     public final int leg = 2;
+    public String[] hubbies;
 
     // Behaviours of the class i.e Methods of the class
     /*
@@ -39,6 +40,17 @@ public class Human {
         System.out.println();
     }
 
+    public StringBuilder humanDetails(){
+        StringBuilder details = new StringBuilder();
+        details.append("Name: " + this.name +"\n");
+        details.append("Age: " + this.age +"\n");
+        details.append("Height: " + this.height +"\n");
+        details.append("Age: " + this.age +"\n");
+        details.append("Color: " + this.color +"\n");
+
+        return details;
+    }
+
     public String playMusic(String track){
         return "Playing...." + track;
     }
@@ -57,5 +69,9 @@ public class Human {
     }
 
     // Methods with array
+
+    public String[] hubbies(){
+        return this.hubbies;
+    }
     // Arrays of objects
 }
